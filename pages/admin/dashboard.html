@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- // fav icon  -->
+   <link rel="icon" href="../../assets/images/blog-solid.svg" type="image/svg+xml">
+  <title>Dashboard</title>
+
+  <!-- //👉  local stylesheet  -->
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="stylesheet" href="../../assets/css/admin.css">
+  <link rel="stylesheet" href="../../assets/css/responsive.css">
+
+
+  <!-- // 👉 google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- // 👉 Fontawesome icon -->
+  <!-- Font Awesome CDN Link -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- //👉 js file  -->
+  <script src="../../assets/js/admin.js"></script>
+</head>
+
+<body>
+
+
+  <!-- // 👉 Header section  -->
+  <header>
+    <section id="header">
+
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="dashboard" id="dashboard">
+      <div>
+        <!-- // dashboard icon  -->
+        <div class="dashboard_icon">
+          <span id="dashIcon"><i class="fa-solid fa-plus"></i></span>
+          <span id="dashClose" class="dashClose"><i class="fa-solid fa-xmark"></i></span>
+          <!-- <div class="dashboard_heading" id="dashboardHeading">
+             <h2>Dashboard</h2>
+           </div> -->
+          <ul id="dashLinks">
+            <!-- <li>
+              <span><i class="fa-solid fa-gear"></i></span>
+               <span>Edit Profile</span>
+             </li> -->
+            <li id="writeBtn">
+              <span><i class="fa-solid fa-pen"></i></span>
+              <span>Write</span>
+            </li>
+            <li id="managePostBtn">
+              <span><i class="fa-solid fa-blog"></i></span>
+              <span>Blogs</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- // Write dashboard  -->
+        <div class="write_div" id="writeDiv">
+          <div style="width: 90%; margin: auto;">
+            <div class="write_close__btn">
+              <span id="writeClose"><i class="fa-solid fa-xmark"></i></span>
+
+            </div>
+            <div class="blog_img" id="blogUploadImg">
+              <span>Upload Img</span>
+            </div>
+            <form id="cardForm">
+
+
+              <button type="submit" id="cardFormSubmit" disabled>Save</button>
+            </form>
+            <input class="write_input__field" type="text" id="writeInput">
+            <!-- Categories Section -->
+            <div class="write_tags" id="writeCategories">
+              <div class="write_tag__title">
+                <span><i class="fa-solid fa-list"></i></span>
+                <label for="tags">Select tags</label>
+              </div>
+              <select name="tags" id="tags">
+                <option value="" disabled selected>Choose a Tags</option>
+                <option value="technology">Technology</option>
+                <option value="lifestyle">LifeStyle</option>
+                <option value="arts">Arts</option>
+                <option value="education">Education</option>
+                <option value="business">Business</option>
+                <option value="food">Food</option>
+                <option value="science">Science</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="fitness">Fitness</option>
+                <option value="miscellaneous">Miscellaneous Topics</option>
+              </select>
+            </div>
+            <div id="writePlusAndCrossIcon">
+              <div class="write_elm" id="writeElm">
+                <span><i class="fa-solid fa-grip-vertical"></i></span>
+                <span id="writePlusIcon"><i class="fa-solid fa-plus"></i></span>
+              </div>
+              <span id="writeCrossIcon"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+            <div class="write_elm__tools" id="writeElmTools">
+              <ul id="writeToolsParent">
+                <li class="writeHeading">
+                  <span class="writeHeading">h1</span>
+                  <span class="writeHeading">Heading</span>
+                </li>
+                <li class="writeText">
+                  <span class="writeText"><i class="fa-solid fa-t"></i></span>
+                  <span class="writeText">Text</span>
+                </li>
+                <li class="writeList">
+                  <span class="writeList"><i class="fa-solid fa-list"></i></span>
+                  <span class="writeList">List</span>
+                </li>
+                <li class="writeImg">
+                  <span class="writeImg"><i class="fa-solid fa-photo-film"></i></span>
+                  <span class="writeImg">Image</span>
+                </li>
+                <li class="writeQuote">
+                  <span class="writeQuote"><i class="fa-solid fa-quote-left"></i></span>
+                  <span class="writeQuote">Quote</span>
+                </li>
+                <li class="writeTags">
+                  <span class="writeTags"><i class="fa-solid fa-tag"></i></span>
+                  <span class="writeTags">Tags</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- // Manage posts -->
+        <div class="manage_posts" id="managePosts">
+ <div class="container">
+  <span class="manage_post__close" id="managePostClose">
+    <i class="fa-solid fa-xmark"></i>
+  </span>
+   <h2>Manage Post</h2>
+  <div class="manage_post__wrap">
+    <!-- <div class="manage_post__card">
+      <div class="manage_post_img">
+        <img src="../../assets/images/portfolio.jpg" alt="">
+      </div>
+     <div class="manage_post__heading">
+      <h3>Hello world</h3>
+     </div>
+     <div class="manage_post__tag">
+      <small>#miscellaneous</small>
+     </div>
+     <div>
+      <span class="manage_post__edit" id="postEdit">
+          <i class="fa-solid fa-pen-to-square"></i>
+         </span>
+         <span class="manage_post__delete" id="postDelete">
+          <i class="fa-solid fa-trash"></i>
+         </span>
+     </div>
+    
+
+    </div>  -->
+
+  </div>
+</div>
+        </div>
+
+
+
+      </div>
+    </section>
+  </main>
+
+</body>
+
+</html>
